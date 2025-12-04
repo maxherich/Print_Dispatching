@@ -5,7 +5,7 @@ class Requirement:
         self.number = number
         self.path = path
 
-    def execute(self): # This method will be connected to the printers and tell to print
+    def execute(self):
         print(f"Requirement {self.number} is being printed")
         time.sleep(3)
         with open(f"./Printed/print{self.number}.txt", "w") as file:
